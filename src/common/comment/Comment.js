@@ -1,11 +1,23 @@
-const  Comment  =(props)=>  {
-    const {name, timeline} = props;
+import React from "react";
+// const  Comment  =(props)=>  {
+//     const {name, timeline} = props;
+//
 
-return <div>
+//
+// }
+class Comment extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            date:  new Date()
+        }
+    }
+    render() {
+        return <div>
             <div>
                 <img src="#" alt="avatar"/>
-                <h3>{name}</h3>
-                <div>{timeline}</div>
+                <h3>{this.props.name}</h3>
+                <div>{}</div>
             </div>
             <div>
                 <div>like</div>
@@ -14,6 +26,6 @@ return <div>
 
 
         </div>;
-
+    };
 }
 export default Comment

@@ -6,7 +6,26 @@ class Header extends React.Component{
 
   render() {
     const menuData = [
- 1,2,3,2,3,324345,
+      {
+        link: '#',
+        text: 'О нас'
+      },
+      {
+        link: '#',
+        text: 'Услуги'
+      },
+      {
+        link: '#',
+        text: 'О нас'
+      },
+      {
+        link: '#',
+        text: 'Вакансии'
+      },
+      {
+        link: '#',
+        text: 'Новости'
+      }
     ];
 
     return (
@@ -15,7 +34,7 @@ class Header extends React.Component{
             logo
           </div>
           <Menu
-              numbers={[2,4]}
+              data={menuData}
           />
         </header>
     )

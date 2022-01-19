@@ -1,17 +1,20 @@
 function ListItem(props) {
-  // Правильно! Не нужно определять здесь ключ:
-  return <li>{props.value}</li>;
-}
+  const {link, text} = props.value;
 
+  return (
+      <li>
+        <a href={link}>{text}</a>
+      </li>
+  )
+}
 function Menu(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) =>
-      // Правильно! Ключ нужно определять внутри массива:
-      <ListItem key={number.toString()} value={number} />
-  );
+  const numbers = props.data;
+
   return (
       <ul>
-        {listItems}
+        {numbers.map((number) =>
+            <ListItem key={number.text} value={number} />
+        )}
       </ul>
   );
 }

@@ -1,5 +1,5 @@
 function ListItem(props) {
-  const {link, text} = props.data;
+  const {link, text} = props.number;
 
   return (
       <li>

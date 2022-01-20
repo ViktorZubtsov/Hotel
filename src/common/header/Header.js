@@ -33,9 +33,9 @@ class Header extends React.Component{
           <div>
             logo
           </div>
-          <Menu
-              data={menuData}
-          />
+            <div>
+              sdsd
+            </div>
         </header>
     )
   }

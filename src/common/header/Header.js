@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css"
 import NavBar from "../nav-bar/NavBar";
+import AuthBtn from "../auth-btn/AuthBtn";
 
 
 class Header extends React.Component{
@@ -34,6 +35,9 @@ class Header extends React.Component{
             <NavBar
                 linkList={links}
             />
+          </div>
+          <div>
+            <AuthBtn/>
           </div>
         </header>
     )

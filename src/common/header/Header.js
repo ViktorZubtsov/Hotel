@@ -1,11 +1,12 @@
 import React from "react";
 import "./header.css"
+import NavBar from "../nav-bar/NavBar";
 
 
 class Header extends React.Component{
 
   render() {
-    const menuData = [
+    const links = [
       {
         link: '#',
         text: 'О нас'
@@ -13,10 +14,6 @@ class Header extends React.Component{
       {
         link: '#',
         text: 'Услуги'
-      },
-      {
-        link: '#',
-        text: 'О нас'
       },
       {
         link: '#',
@@ -33,9 +30,11 @@ class Header extends React.Component{
           <div>
             logo
           </div>
-            <div>
-              sdsd
-            </div>
+          <div>
+            <NavBar
+                linkList={links}
+            />
+          </div>
         </header>
     )
   }

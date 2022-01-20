@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css"
-import Menu from "../menu/Menu";
+
 
 class Header extends React.Component{
 

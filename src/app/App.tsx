@@ -1,9 +1,9 @@
 import React from 'react';
-import './app.css';
+import './app.scss';
 
 const App = ()=>  {
   return (
-    <div className="App">
+    <div className="app">
         sdds
     </div>
   );

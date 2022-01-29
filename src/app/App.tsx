@@ -4,9 +4,8 @@ import Header from "../component/header/Header";
 
 const App = ()=>  {
   return (
-      <>
-        <Header/>
         <Router>
+          <Header/>
           <Switch>
             <Route path="/" exact>
               <div className="app">
@@ -15,8 +14,6 @@ const App = ()=>  {
             </Route>
           </Switch>
         </Router>
-      </>
-
   );
 }
 

@@ -1,6 +1,7 @@
 import "./header.scss"
 import logo from '../../assets/img/Logo.svg'
-import Menu from "../menu/Menu";
+import Menu from "../Menu/Menu";
+import AuthBlock from "./AuthBlock/AuthBlock";
 
 const Header = () => {
     const links = [
@@ -18,9 +19,11 @@ const Header = () => {
       <header className='header'>
         <div className="container">
             <img src={logo} alt="logo"/>
-            <div>
+            <div className="header-inner">
                 <Menu
                     links={links}
+                />
+                <AuthBlock
                 />
             </div>
         </div>

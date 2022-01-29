@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './app.scss';
-import Header from "../component/header/Header";
+import Header from "../component/Header/Header";
 
 const App = ()=>  {
   return (

@@ -17,16 +17,17 @@ const Header = () => {
     ];
   return (
       <header className='header'>
-        <div className="container">
-            <img src={logo} alt="logo"/>
-            <div className="header-inner">
-                <Menu
-                    links={links}
-                />
-                <AuthBlock
-                />
-            </div>
-        </div>
+          derrerer
+        {/*<div className="container">*/}
+        {/*    <img src={logo} alt="logo"/>*/}
+        {/*    <div className="header-inner">*/}
+        {/*        <Menu*/}
+        {/*            links={links}*/}
+        {/*        />*/}
+        {/*        <AuthBlock*/}
+        {/*        />*/}
+        {/*    </div>*/}
+        {/*</div>*/}
       </header>
   )
 }

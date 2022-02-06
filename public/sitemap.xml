@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <url>
+            <loc>http://localhost:3000/</loc>
+            <lastmod>2022-02-06</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    </sitemap>
+    <sitemap>
+        <url>
+            <loc>http://localhost:3000/rooms</loc>
+            <lastmod>2022-02-06</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    </sitemap>
+</sitemapindex>

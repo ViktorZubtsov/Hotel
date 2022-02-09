@@ -1,4 +1,6 @@
 import HelmetCard from "../../component/HelmetCard";
+import HelpCard from "../../component/HelpCard/HelpCard";
+
 
 const Main = () => {
   return(
@@ -9,6 +11,7 @@ const Main = () => {
             keywords="keywords"
         />
         Main
+        <HelpCard/>
       </div>
   )
 }

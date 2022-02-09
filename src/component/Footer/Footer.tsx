@@ -1,47 +1,34 @@
 import "./footer.scss"
 import Menu from "../Menu/Menu";
+import {useRef} from "react";
 
 const Footer = () => {
   const links = [
     {
-      name: "O нас",
+      name: "O на drс",
       link: '/',
     },
-    {
-      name: "Услуги",
-      link: '/rooms',
-    },
-    {
-      name: "O нас",
-      link: '/',
-    },
-    {
-      name: "Услуги",
-      link: '/rooms',
-    },
-    {
-      name: "O нас",
-      link: '/',
-    }
+
 
   ];
+  const test = () => {
+    // @ts-ignore
+    console.log(inputValue.current.value)
+  }
+  const inputValue = useRef(null);
   return(
       <footer className="footer">
         <div className="container footer__content">
-          <Menu
-              links={links}
-          />
-          <Menu
-              links={links}
-          />
-          <Menu
-              links={links}
-          />
+            <Menu
+                links={links}
+            />
+
           <div>
             <input
+                ref={inputValue}
                 type="text"
             />
-            <button>click</button>
+            <button onClick={test}>click</button>
           </div>
         </div>
       </footer>

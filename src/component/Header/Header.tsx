@@ -7,27 +7,26 @@ const Header = () => {
     const links = [
         {
             name: "O нас",
-            link: '/about',
+            link: '/',
         },
         {
             name: "Услуги",
-            link: '/te',
+            link: '/rooms',
         }
 
     ];
   return (
       <header className='header'>
-          derrerer
-        {/*<div className="container">*/}
-        {/*    <img src={logo} alt="logo"/>*/}
-        {/*    <div className="header-inner">*/}
-        {/*        <Menu*/}
-        {/*            links={links}*/}
-        {/*        />*/}
-        {/*        <AuthBlock*/}
-        {/*        />*/}
-        {/*    </div>*/}
-        {/*</div>*/}
+        <div className="container">
+            <img src={logo} alt="logo"/>
+            <div className="header-inner">
+                <Menu
+                    links={links}
+                />
+                <AuthBlock
+                />
+            </div>
+        </div>
       </header>
   )
 }

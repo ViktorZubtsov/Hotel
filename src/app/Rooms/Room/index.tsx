@@ -8,7 +8,7 @@ const Room = () => {
             description="description"
             keywords="keywords"
         />
-        room
+
       </div>)
 }
 export default Room

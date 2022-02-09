@@ -20,7 +20,7 @@ const HelpCard = () => {
          width: '80px',
          height: '100px',
          position: 'absolute',
-         bottom: '0',
+         bottom: '50%',
          left: '0'
        }}>
          HelpCard

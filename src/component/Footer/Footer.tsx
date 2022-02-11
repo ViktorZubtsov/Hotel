@@ -1,6 +1,7 @@
 import "./footer.scss"
 import Menu from "../Menu/Menu";
-import {useRef} from "react";
+import {useContext, useRef} from "react";
+import {Theme} from "../../common/context/Theme";
 
 const Footer = () => {
   const links = [
@@ -15,9 +16,12 @@ const Footer = () => {
     // @ts-ignore
     console.log(inputValue.current.value)
   }
+  const theme = useContext(Theme)
   const inputValue = useRef(null);
   return(
-      <footer className="footer">
+      <footer className={theme.bg} onClick={()=> {
+        theme.toggle()
+      }}>
         <div className="container footer__content">
             <Menu
                 links={links}

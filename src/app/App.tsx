@@ -4,6 +4,7 @@ import Default from "../Layouts/Default";
 import Main from "./Main";
 import Auth from "./Auth";
 import Rooms from "./Rooms";
+import NotFound from "./NotFound";
 
 
 const App = ()=>  {
@@ -13,7 +14,7 @@ const App = ()=>  {
           <Route index element={<Main/>}/>
           <Route  path="rooms/*" element={<Rooms/>} />
           <Route  path="auth" element={<Auth/>} />
-          <Route path="*" element={<div>404</div>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Route>
       </Routes>
   );
